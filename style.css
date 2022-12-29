@@ -1,0 +1,62 @@
+@import "https://fonts.googleapis.com/css?family=Prosto+One";
+body{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 1em;
+    background: #222;
+}
+
+.timer-digital {
+    display:block;
+    font-size:13em;
+    line-height:1em
+}
+
+.timer-block {
+    color: antiquewhite;
+    font-family: Prosto One;
+    border: 2px solid antiquewhite;
+    padding: 3px;
+    cursor: pointer;
+    width: 210px;
+}
+
+.timer-container {
+    display: flex;
+    width: 890px;
+    margin: 0 auto;
+}
+
+.timer-divider {
+    margin: 0 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: end;
+    padding: 5px 20px 20px 0;
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: 95em;
+}
+
+.btn {
+    border: 6px solid antiquewhite;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 5em;
+    padding: 0 20px;
+}
+
+.btn-small {
+    border-radius: 60%;
+    width: 1em;
+}
+
+.btn-big {
+    margin: 0 20px;
+    padding: 20px;
+}
