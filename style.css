@@ -40,7 +40,7 @@ body{
 }
 
 .footer {
-    margin-top: 95em;
+    margin-top: 70em;
 }
 
 .btn {
@@ -59,4 +59,14 @@ body{
 .btn-big {
     margin: 0 20px;
     padding: 20px;
+}
+
+.timer-labels {
+    display: flex;
+    justify-content: space-around
+}
+
+.label {
+    color: antiquewhite;
+    font-size: 5em;
 }
