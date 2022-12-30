@@ -1,4 +1,5 @@
 const timerList = document.querySelectorAll('.timer-block');
+const startBtn = document.getElementById('start-button');
 let oldPos = 0; // предыдущая позиция тача
 
 timerList.forEach( timer => {
@@ -34,6 +35,28 @@ timerList.forEach( timer => {
         //TODO записывать в переменную значение
         console.log(e.changedTouches[0].clientY);
     })
+})
+
+startBtn.addEventListener('click', () => {
+    // берем все таймеры
+    // берем значение первого, считаем
+    // анимируем первый
+    // когда первый закончился - запускаем второй и т.д. (цикл)
+
+    const timerContainers = document.querySelectorAll('.timer-container');
+
+    timerContainers.forEach( timer => {
+        const time = timer.querySelectorAll('.timer-digital');
+
+        // console.log(Array.from(time))
+        //
+        // let timeValue = [...time].reduce( (res, cur) => {
+        //     res + cur.getAttribute('data-value');
+        // }, 0);
+        //
+        // console.log(timeValue)
+    })
+
 })
 
 

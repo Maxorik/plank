@@ -2,34 +2,56 @@
 body{
     margin: 0 auto;
     width: 100%;
-    text-align: center;
     padding-top: 1em;
     background: #222;
 }
 
 .timer-digital {
     display:block;
-    font-size:13em;
-    line-height:1em
+    font-size:12em;
+    line-height:0.85em
 }
 
 .timer-block {
     color: antiquewhite;
     font-family: Prosto One;
     border: 2px solid antiquewhite;
-    padding: 3px;
+    padding-top: 10px;
     cursor: pointer;
-    width: 210px;
+    width: 180px;
+    text-align: center;
 }
 
 .timer-container {
     display: flex;
-    width: 890px;
-    margin: 0 auto;
+    width: 550px;
+}
+
+.timer-body.left-pos > .timer-container,
+.timer-body.left-pos > .timer-title {
+    margin: 0 0 0 10%;
+}
+.timer-body.right-pos > .timer-container,
+.timer-body.right-pos > .timer-title {
+    margin: 0 0 0 35%;
+}
+
+.timer-body.left-pos > .timer-labels {
+    margin: 0 0 0 6%;
+}
+
+.timer-body.right-pos > .timer-labels {
+    margin: 0 0 0 31%;
+}
+
+.timer-labels {
+    width: 55%;
+    display: flex;
+    justify-content: space-around
 }
 
 .timer-divider {
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 .header {
@@ -40,14 +62,14 @@ body{
 }
 
 .footer {
-    margin-top: 70em;
+    margin-bottom: 10px;
 }
 
 .btn {
     border: 6px solid antiquewhite;
     text-align: center;
     color: antiquewhite;
-    font-size: 5em;
+    font-size: 4em;
     padding: 0 20px;
 }
 
@@ -61,12 +83,11 @@ body{
     padding: 20px;
 }
 
-.timer-labels {
-    display: flex;
-    justify-content: space-around
+.label, .timer-title {
+    color: antiquewhite;
+    font-size: 3em;
 }
 
-.label {
-    color: antiquewhite;
-    font-size: 5em;
+.timer-body {
+    margin-bottom: 30px;
 }
